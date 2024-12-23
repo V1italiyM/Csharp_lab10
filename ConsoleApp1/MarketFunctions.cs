@@ -37,7 +37,7 @@ namespace Functions // Пространство имен для функций �
         // Метод для получения данных из API и сохранения их в базу данных
         public async Task GetDataAndSaveAsync(string ticker, string startDate, string endDate)
         {
-            string apiKey = "YlJIQkZUMFM3V0c4VFphYmh1RzlJbDVjY2lKbFJJdEdMa2t6U0hYUHBTdz0"; // API ключ для авторизации
+            string apiKey = ""; // API ключ для авторизации
             // Формирование URL запроса
             string URL = $"https://api.marketdata.app/v1/stocks/candles/D/{ticker}/?from={startDate}&to={endDate}&token={apiKey}";
             HttpClient client = new HttpClient(); // Создание HTTP клиента
